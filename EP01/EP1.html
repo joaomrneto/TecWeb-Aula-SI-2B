@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<meta name="João" content="João Martins-1510229">
+<p><strong>1) Da lista de tecnologias abaixo, aponte qual é executada no cliente e qual é executada no servidor </strong></p>
+<table border="1">
+	<tr><th>Tecnologia</th><th>Cliente</th><th>Servidor</th></tr>
+	<tr><td>Apache</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>JavaScript</td><td>Cliente</td><td>&nbsp;</td></tr>
+	<tr><td>Tomcat</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>Java</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>HTML</td><td>Cliente</td><td>&nbsp;</td></tr>
+	<tr><td>PHP</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>MySQL</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>XHTML</td><td>Cliente</td><td>&nbsp;</td></tr>
+	<tr><td>MongoDB</td><td>&nbsp;</td><td>Servidor</td></tr>
+	<tr><td>CSS</td><td>Cliente</td><td>&nbsp;</td></tr>
+</table>
+
+<p><strong>2) Aponte as regiões da URL <code>http://www.impacta.com.br/eventos/default.php</code></strong></p>
+
+<p>RESPOSTA: www.impacta.com.br</p>
+
+<p><strong>3) Quais outros protocolos de comunicação para troca de mensagens via internet existem? Pesquise e cite 3 exemplos, descrevendo sua função e aplicação.</strong></p>
+<ul>
+	<li>
+		<p>
+			PROTOCOLO 1:TCP -> O TCP "Protocolo de controle de transmissão" é um dos protocolos sob os quais assenta a Internet. Ele é complementado pelo Protocolo da Internet, sendo normalmente chamado de TCP/IP. A versatilidade e robustez do TCP tornou-o adequado a redes globais, já que este verifica se os dados são enviados de forma correta, na sequência apropriada e sem erros, pela rede.
+		</p>
+	</li>
+	<li>
+		<p>
+			PROTOCOLO 2:SSH -> "Secure Shell" é um protocolo de rede criptográfico para operação de serviços de rede de forma segura sobre uma rede insegura. A melhor aplicação de exemplo conhecida é para login remoto a sistemas de computadores pelos usuários.
+		</p>
+	</li>
+	<li>
+		<p>
+			PROTOCOLO 3:IP -> "Protocolo de Internet" é um protocolo de comunicação usado entre todas as máquinas em rede para encaminhamento dos dados. Tanto no Modelo TCP/IP, quanto no Modelo OSI, o importante protocolo da internet IP está na camada intitulada camada de rede.
+		</p>
+	</li>
+</ul>
+
+<p><strong>4) Explore os sites de hospedagem do  (<a href="http://www.uolhost.uol.com.br/" target="_blank">http://www.uolhost.uol.com.br/</a>) e da LOCAWEB (<a href="https://www.locaweb.com.br" target="_blank">https://www.locaweb.com.br</a>), veja os serviços que eles oferecem. Qual desses serviços (em cada site) seria mais adequado para o seu site de desenvolvedor (páginas estáticas) e para a sua aplicação web?</strong></p>
+
+<p>RESPOSTA:No site da UOL para <em>págs. estáticas</em> seria interessante o UOL Cloud Computing, pois permite mexer também com BD e é mais flexível para alterar ou customizar seus dados.
+Já uma <em>aplicação WEB</em>poderia ser com o Hospedagem de Sites UOL HOST, pois é de fácil manuzeio, e também é rápido.</br>
+No site da Local Web para <em>págs. estáticas</em> o interessante é o Cloude Hosting, devido a uma ótima performance sem se preocupar com riscos de picos "quedas" de acessos.
+Para <em>aplicações web</em> poderia ser uma boa opção o Cloud Server Pro, ele tem uma infraestrutura escalável de automia e flexibilidade, tudo para desenvolver do seu próprio jeito
+</p>
+
+<p><strong>5) Pequisem sobre as limitações do HTTP 1.1 e como o HTTP2 vence essa limitação, cite 2 dessas limitações e suas respostas no HTTP2</strong></p>
+
+<p>RESPOSTA:Um alto custo de se fazer vários requests no HTTP 1.1 era o tráfego dos cabeçalhos (headers). Eles não eram comprimidos, mas enviados em texto puro. E, pra piorar, cabeçalhos tinham que ser mandados novamente a toda requisição.</br>
+No HTTP 2.0, os cabeçalhos são binários e compactados. Além disso, com os header tables, o navegador e o servidor podem mandar um certo header uma vez só e reaproveitar para as requisições seguintes. Só é preciso mandar os cabeçalhos que mudam. Isso deixa as requisições ainda mais baratas e justificam ainda mais a prática de usar vários requests ao invés de concatenar as coisas como fazíamos antigamente.</br>
+A limitação nas requisições no HTTP 1.1 é tão grande que nasceram diversas técnicas para passar por cima disso. A mais comum era a utilização de múltiplos hostnames para aumentar o limite de conexões paralelas. O browser abria então 6 conexões com o hostname principal mas a página usava mais outros endereços para ganhar mais 6 conexões.</br>
+No HTTP 2.0 e no SPDY, usar vários hostnames é uma má-prática, principalmente por anular os benefícios do multiplexing. Agora, a conexão única do protocolo consegue paralelizar todos os requests e responses e não é mais necessário várias conexões.</br>
+Com o <em>multiplexing</em>, agora o navegador pode manter apenas uma conexão aberta e paralelizar as requisições e respostas dentro dela. Não há mais bloqueio e espera. Podemos fazer várias pequenas requisições separadas e ter excelente performance, o que não era possível no HTTP 1.1.
+</p>
